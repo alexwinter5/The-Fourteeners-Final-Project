@@ -149,18 +149,18 @@
 
 \section{ABSTRACT}
 %The abstract is a summary of your proposal. In general, your abstract should have enough information so that if I was to copy and paste your abstract into a web site, people would get the general idea of what your proposal is about. It should not go into any heavy detail, just the basics of what your project is about. The who, the what, and the why. You should keep your abstract to 200-400 words. Use this to ``hook in'' your reader.
-The final project for Group 14, the Fourteeners, will be an arduino-based project involving several components simulating a soccer game. This soccer game will involve a Lego "player" with range of motion for a kick provided by a servo. This player will be controlled by a joystick which will rotate the servo to produce a kicking effect. Additionally, a point tracker will be displayed on a small 7-segment display with a point system based off of an ultrasonic sensor and a push sensor.
+The final project for Group 14, the Fourteeners, will be an arduino-based project involving several components simulating a soccer game. This soccer game will involve a Lego "player" with range of motion for a kick provided by a servo. This player will be controlled by a joystick which will rotate the servo to produce a kicking effect. Additionally, a point tracker will be displayed on a small LCD screen with a point system based off of an ultrasonic sensor and a push sensor.
 The reason behind this final project choice was to create a fun project that would involve several different sensors and components. This would provide an opportunity to practice our coding skills in the Arduino language. We are hoping that our current practice programming in C will prepare us to be able to handle all the sensors and capabilities we hope to implement. Additionally, our current project scope, we believe, gives us the ability to be able to add upon our original thoughts. This might look like adding more servos, or different sensors to add difficulty to the point system.
 To recap, the final project will be a soccer type game on a small scale soccer field. The soccer player will be able to kick the small plastic or rubber ball using a servo that will be controlled by a joystick. Once the soccer ball has been kicked, an ultrasonic sensor will be placed on the goal line to sense whether or not the ball has been kicked into the net. This is how the point tracker will be triggered as well.
 \section{INTRODUCTION}
 %While the abstract and introduction may seem like it is similar, remember that your abstract should have enough information to stand on its own. The introduction is really the actual start to your proposal. Here you should introduce the project, the people involved and give a short introduction to the why you are doing this. This should be 1-3 paragraphs.
-The Fourteeners will be creating a soccer game for the final project. This will include a small scale soccer field and a Lego soccer player who is able to shoot a ball into the goal. This project will require the use of multiple sensors and inputs such as a servo, an ultrasonic sensor, a joystick, a push sensor, and a seven segment display. Because of this, we will be gaining a wide range of knowledge of coding in the Arduino language.
+The Fourteeners will be creating a soccer game for the final project. This will include a small scale soccer field and a Lego soccer player who is able to shoot a ball into the goal. This project will require the use of multiple sensors and inputs such as a servo, an ultrasonic sensor, a joystick, a push sensor, and a LCD screen. Because of this, we will be gaining a wide range of knowledge of coding in the Arduino language.
 
 The team members who have been assigned to this project are William Cashen, Khushi Kapoor, Delane Hood, Alex Winter, and Judd Baer. Currently, there are various levels of experience with coding in general, and specifically with using an Arduino. This is important so that others can learn and some can take the lead on certain parts. Additionally, various experience levels are also prominent on the mechanical side. This was also be crucial, as a chunk of the project will be dealing with the mechanical assembly and integration.
 
 Several options were discussed by a few members of the team to decide what the final project should be. We even tried combining a few to accommodate everyone's ideas. After discussion, the team decided to go with the soccer game idea because we thought it would be a fun way to integrate many components, and also have the ability to add functionality once the semester progresses.
 \section{FEATURES}
-Our project aims to have at least and likely more than three key features to define it. A big feature we will include is the use of servos to control a figurine on our table. The figurine will be moved using inputs from a joystick attached through the USB port on the CPX. These inputs will then be transferred to the servo and the servo will execute the desired movement. This feature is a critical one because nothing else can happen if the figure doesn't hit the ball. Another feature that will occur after the figurine has hit the ball is the counting of a goal. In order for us to count the shot as a goal we need to track it using an ultrasonic sensor. This sensor will detect the ball and once it has passed the goal line trigger another condition for counter. We will also have a target at the back of the net to add an additional point. This feature aims to measure the quality of shot from the user and figure. If the ball touches the target it will add to a counter. These points will then be displayed on an LCD that sits above the table. All these features will contribute to make the exercise a fun game or simulation. 
+Our project aims to have at least and likely more than three key features to define it. A big feature we will include is the use of servos to control a figurine on our table. The figurine will be moved using inputs from a joystick attached through the usb port on the CPX. These inputs will then be transferred to the servo and the servo will execute the desired movement. This feature is a critical one because nothing else can happen if the figure doesn't hit the ball. Another feature that will occur after the figurine has hit the ball is the counting of a goal. In order for us to count the shot as a goal we need to track it using an ultrasonic sensor. This sensor will detect the ball and once it has passed the goal line trigger another condition for counter. We will also have a target at the back of the net to add an additional point. This feature aims to measure the quality of shot from the user and figure. If the ball touches the target it will add to a counter. These points will then be displayed on an LCD that sits above the table. All these features will contribute to make the exercise a fun game or simulation. 
 
 
 % Below is an example of inserting an image.  Not that LaTex
@@ -169,21 +169,22 @@ Our project aims to have at least and likely more than three key features to def
 % You can use the \label{name} to name the figure and then reference
 % it from your writeup and LaTeX will automatically give it the correct
 % number. 
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=4.5in]{cpx01.jpg}
-%%\caption{This is the Circuit Playground Express}
-%\label{fig:cpx}
-%\end{figure}
+\begin{figure}[!t]
+\centering
+\includegraphics[width=4.5in]{cpx01.jpg}
+\caption{This is the Circuit Playground Express}
+\label{fig:cpx}
+\end{figure}
 
 \section{PROBLEM STATEMENT}
-Here you will go into more detail on what problem you hope to solve or address.  You should discuss what the problem is and why it is important to solve it. In this section, you need to be clear on what the problem is, so do not think of this as a ``light'' section. It helps to define your project.
+%Here you will go into more detail on what problem you hope to solve or address. You should discuss what the problem is and why it is important to solve it. In this section, you need to be clear on what the problem is, so do not think of this as a ``light'' section. It helps to define your project.
 
-Your team needs to do some research into the problem at hand. Becuase of that, you should have around two to three references that you are pulling from. There are lots of places you can find references from including the ISU library and Google Scholar. I would also suggest looking at Adafruit's website, as you may find inspiration or looking to improve something already there. Remember to cite your sources though. If you find something online, that can often be citation.
+%Your team needs to do some research into the problem at hand. Becuase of that, you should have around two to three references that you are pulling from. There are lots of places you can find references from including the ISU library and Google Scholar. I would also suggest looking at Adafruit's website, as you may find inspiration or looking to improve something already there. Remember to cite your sources though. If you find something online, that can often be citation.
 
-When you create your ``ref.bib'' file, don't forget to follow the standards for a BiBTex file. Certain things like webistes requires certain keywords for it to render properly. There are lots of sources online to help with this and many places like the ISU Library and Google Scholar can also generate text that is compatible with a BiBTex file. Once you have your Bib file ready, don't forget to cite your citations in your proposal like this \cite{einstein} or this \cite{dirac}.
- 
-\newpage
+%When you create your ``ref.bib'' file, don't forget to follow the standards for a BiBTex file. Certain things like webistes requires certain keywords for it to render properly. There are lots of sources online to help with this and many places like the ISU Library and Google Scholar can also generate text that is compatible with a BiBTex file. Once you have your Bib file ready, don't forget to cite your citations in your proposal like this \cite{einstein} or this \cite{dirac}.
+
+Our fun little problem that we have to solve is Mr. Ronaldo has struggled to earn some quality goals in Lego City and its our job to fix that. With the help of our physical inputs we will help Ronaldo practice scoring and hitting his target. This will be achieved using multiple servos and a joystick. The joystick will be connected via the USB port and give commands to the servos. The servos will move in a similar way that we use our hands to control a Foosball player. The website \cite{maker.pro} has a really good tutorial on how to do this using an Arduino Uno. This is a little bit different because it uses pins and wiring. We are gonna try and save slots on the CPX and use the USB port as mentioned earlier. The way we will measure his scoring ability is using the ultrasonic sensor on the CPX. There's also guides on the \cite{Adafruit_Ultrasonic_Sensor} website on connecting and setting up the ultrasonic sensor using a breadboard and four wires. The main task at hand for us will be how we set a specific distance away from the CPX for the goal line. This transitions us into the use of the CPX at the back of the goal. We are hoping to use this as the desired target for Ronaldo's shot. Using the buttons on the board we would like to set up a rugged object that presses in on the buttons once the ball hits the target. These button presses will also add to the counter. Similar to before the Adafruit website has tons of guides on their products. This guide, \cite{Adafruit_Buttons_A_and_B} specifically addresses how to enable conditions.
+All of this culminates to add a counter we will show on a small LCD. 
 
 \section{PROBLEM SOLUTION}
 %Here go over your approach to your solution and what your solution is. You must include at least one image that shows your concept. This image can be a sketch or drawing or some pictures that show your concept. Make sure you reference the image(s) like this - Figure \ref{fig:cpx}. Finally, make sure you replace the stock image I included. You should also reference any sources you had from your problem statement as well.
@@ -202,11 +203,11 @@ the ball went through the correct area, it considers it as a point scored. To ke
 display the score on the seven segment display. It will keep track by adding one point each time the ball goes into 
 goal. A rough concept image can be see below in Figure \ref{fig:concept_image}.
 
+\newpage
 
-
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=6.5in]{images/Concept_image.png}
+\includegraphics[width=6in]{images/Concept_image.png}
 \caption{Concept Image of our project.}
 \label{fig:concept_image}
 \end{figure}
@@ -247,22 +248,8 @@ The parts that we do not have and needed are seen below in Table \ref{table:part
 \newpage
 
 \section{CONCLUSION}
-%Finally, wrap up your proposal. This only needs to be %one or two paragraphs, but it should conclude with what you plan to do and the why and how. Yes, this may seem %%repetitive, 
-%but that is intentional. Do not forget to update your %references as those will appear below in a seperate %page.    %%
-
-Our plan is to make a small soccer game that challenges a user to control a Lego Minifigure to kick a small ball into a goal. Our device will move the Lego player with servos and keep score of how many points the user can make.  We also agreed that this project would challenge us the appropriate amount. We decided on this project because it will be entertaining to build, program and play!
-
-
-
-
-
-
-
-
-
-
-
-
+Finally, wrap up your proposal. This only needs to be one or two paragraphs, but it should conclude with what you plan to do and the why and how. Yes, this may seem repetitive, 
+but that is intentional. Do not forget to update your references as those will appear below in a seperate page.
 
 
 
@@ -273,3 +260,4 @@ Our plan is to make a small soccer game that challenges a user to control a Lego
 %\bibliography{ref}
 
 \end{document}
+
